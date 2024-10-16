@@ -35,14 +35,11 @@ export default function Form() {
       if (response.ok) {
         const result = await response.json();
         console.log('User registered successfully:', result);
-        // Aquí puedes agregar lógica adicional, como mostrar un mensaje de éxito o redirigir al usuario
       } else {
         console.error('Error registering user');
-        // Aquí puedes manejar errores, como mostrar un mensaje de error al usuario
       }
     } catch (error) {
       console.error('Error:', error);
-      // Aquí puedes manejar errores de red u otros errores inesperados
     }
   };
 
